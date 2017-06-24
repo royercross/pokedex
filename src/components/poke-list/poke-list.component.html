@@ -1,0 +1,5 @@
+<div class="pokemon" *ngFor="let pokemon of pokemones" (click)="showPokemon(pokemon)">
+  <img src="assets/sprites/pokemon/{{ pokemon.entry_number }}.png" alt="">
+  <p>{{ pokemon.pokemon_species.name }}</p>
+</div>
+

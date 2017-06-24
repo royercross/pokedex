@@ -1,0 +1,25 @@
+.pokedex{
+    width: 800px;
+    height: 600px; 
+    margin: 0 auto;
+    background: url(../../assets/pokedex.png) no-repeat;
+    position: relative;
+}
+
+.poke-info{
+    position: absolute;
+    background: white;
+    top: 154px;
+    left:30px;
+    width: 330px;
+    height: 335px;
+}
+.poke-list{
+    position: absolute;
+    background: white;
+    right: 36px;
+    top: 159px;
+    width:299px;
+    height: 373px;
+    overflow: scroll;
+}

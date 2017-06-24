@@ -1,0 +1,25 @@
+.pokemon{
+    display: block;
+    height: 96px;
+    border: 1px solid #4d4d4d;
+}
+
+.pokemon:active { 
+    background-color: yellow;
+}
+
+.pokemon img{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+}
+
+.pokemon p{
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    line-height: 100px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
