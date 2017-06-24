@@ -18,21 +18,17 @@ export class PokeListComponent implements OnInit {
     this.pokemonService.getPokemones()
       .subscribe( (result) => {
         this.pokemones = result.pokemon_entries;
-        console.log(this.pokemones);
       })
   }
 
   showPokemon(pokemon: any) {
-    console.log("show pokemon", pokemon);
     if ('speechSynthesis' in window) {
        const speech = new SpeechSynthesisUtterance(pokemon.pokemon_species.name);
        speech.lang = 'en-US';
        window.speechSynthesis.speak(speech);
     }
 
-    this.router.navigate(['/pokemon', pokemon.entry_number]);
-    //this.router.navigate(['pokemon']);
-    //this.pokemonService.showPokemon(pokemon);
+    this.router.navigate(['/pokedex', pokemon.entry_number]);
   }
 
 }

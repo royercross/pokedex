@@ -21,7 +21,6 @@ import { AppComponent } from './app.component';
     BrowserModule,
     HttpModule,
     routing
-
   ],
   providers: [
     PokemonService
