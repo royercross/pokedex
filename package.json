@@ -1,10 +1,13 @@
 {
   "name": "pokedex",
+  "main": "main.js",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "build-electron": "ng build --base-href . && cp src/electron/* dist",
+    "electron": "npm run build-electron && electron dist/main.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -22,7 +25,7 @@
     "@angular/platform-browser-dynamic": "^4.0.0",
     "@angular/router": "^4.0.0",
     "core-js": "^2.4.1",
-    "pokemon-sprites": "github:PokeAPI/sprites",
+    "electron": "^1.6.11",
     "rxjs": "^5.1.0",
     "zone.js": "^0.8.4"
   },
