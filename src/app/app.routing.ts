@@ -10,4 +10,4 @@ const routes: Routes = [
   {path: 'pokemon/:id', component: PokedexComponent }
 ];
 
-export const routing = RouterModule.forRoot(routes);
+export const routing = RouterModule.forRoot(routes, {useHash: true});
